@@ -1,4 +1,4 @@
-# Projet : Analyse de données Mastodon Big Data avec Airflow, Hadoop et HBase
+# Analyse de données Mastodon Big Data avec Airflow, Hadoop et HBase
 
 ## Introduction
 
