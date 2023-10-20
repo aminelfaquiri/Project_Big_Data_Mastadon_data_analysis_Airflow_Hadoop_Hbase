@@ -1,44 +1,43 @@
-# Project: Big Data Mastodon Data Analysis with Airflow, Hadoop, and HBase
+# Projet : Analyse de données Mastodon Big Data avec Airflow, Hadoop et HBase
 
 ## Introduction
 
-This project focuses on the analysis of Big Data using various tools and technologies, including Airflow, Hadoop, and HBase.
+Ce projet se concentre sur l'analyse de Big Data en utilisant divers outils et technologies, notamment Airflow, Hadoop et HBase.
 
-## Planning
+## Planification
 
-In this section, we will outline the project plan and key milestones.
+Dans cette section, nous allons définir le plan du projet et les jalons clés.
 
-## Requirements Expression
+## Expression des Besoins
 
-Here, we will describe the specific requirements and objectives of the project.
+Ici, nous décrirons les exigences spécifiques et les objectifs du projet.
 
-## Environment Setup
+## Configuration de l'Environnement
 
-To get started with this project, we need to set up the environment. This involves installing and configuring the necessary tools and technologies.
+Pour commencer ce projet, nous devons configurer l'environnement. Cela implique d'installer et de configurer les outils et technologies nécessaires.
 
-## Installation Guides
+## Guides d'Installation
 
-- ### Install Hadoop
+- ### Installation de Hadoop
 
-  This section provides instructions on how to install Hadoop, a crucial component for handling and processing Big Data.
+  Cette section fournit des instructions sur l'installation de Hadoop, un composant essentiel pour la gestion et le traitement de Big Data.
 
-- ### Install HBase
+- ### Installation de HBase
 
-  Here, you can find detailed steps for installing HBase, a distributed and scalable NoSQL database often used in Big Data projects.
+  Ici, vous trouverez des étapes détaillées pour l'installation de HBase, une base de données NoSQL distribuée et évolutive souvent utilisée dans les projets Big Data.
 
-- ### Install Airflow
+- ### Installation d'Airflow
 
-  Airflow is an essential tool for orchestrating and scheduling data workflows. This part will guide you through the installation process.
+  Airflow est un outil essentiel pour orchestrer et planifier les flux de données. Cette partie vous guidera à travers le processus d'installation.
 
-## Data Collection
+## Collecte de Données
 
-In this phase, we will discuss methods and strategies for data collection, which is a crucial step in any Big Data analysis project.
+À cette étape, nous discuterons des méthodes et des stratégies de collecte de données, une étape cruciale dans tout projet d'analyse de Big Data.
 
-## MapReduce Processing
+## Traitement MapReduce
 
-MapReduce is a fundamental concept in Big Data processing. Here, we'll explore how to leverage this paradigm for data processing.
+MapReduce est un concept fondamental dans le traitement de Big Data. Ici, nous explorerons comment exploiter ce paradigme pour le traitement des données.
 
-## Data Storage with HBase
+## Stockage des Données avec HBase
 
-HBase serves as a reliable and scalable storage solution for Big Data. Learn how to effectively store and manage data with HBase.
-
+HBase sert de solution de stockage fiable et évolutive pour le Big Data. Apprenez comment stocker et gérer efficacement les données avec HBase.
