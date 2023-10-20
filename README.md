@@ -30,3 +30,5 @@ This project is dedicated to the analysis of data from the Mastodon platform and
 
    ```bash
    wget http://www.interior-dsgn.com/apache/hbase/stable/hbase-2.5.5-bin.tar.gz
+
+   
