@@ -1,43 +1,31 @@
-# Analyse de données Mastodon Big Data avec Airflow, Hadoop et HBase
+# Project Big Data Mastodon Data Analysis with Airflow, Hadoop, and HBase
 
 ## Introduction
 
-Ce projet se concentre sur l'analyse de Big Data en utilisant divers outils et technologies, notamment Airflow, Hadoop et HBase.
+This project is dedicated to the analysis of data from the Mastodon platform and aims to address various critical needs for the extraction, processing, and analysis of massive data. As a data developer, the mission is to establish an automated pipeline to tackle these complex challenges. This project responds to the necessity of extracting meaningful insights from raw Mastodon data, focusing on user analysis, content analysis, language analysis, media engagement, tags, mentions, and more. To achieve this, several key steps need to be followed, from raw data collection to in-depth analysis of the results. These needs define the framework of this Big Data project and will be detailed in the following sections.
 
-## Planification
+## Planning
 
-Dans cette section, nous allons définir le plan du projet et les jalons clés.
+### Requirements Expression
 
-## Expression des Besoins
+- **Data Collection:** Use the Mastodon API, store data in HDFS, and model the HDFS Data Lake.
+- **MapReduce Processing:** Mapper and reducer to transform and aggregate data.
+- **MapReduce Job Execution:** Utilize the Hadoop streaming API and monitor through the Hadoop Web interface.
+- **Store Results in HBase:** Design the HBase schema, create tables, and insert data.
+- **Orchestration with Apache Airflow:** Define a DAG, create tasks, and monitor through Airflow.
+- **Results Analysis:** Query data in HBase to extract information about users, content, language, media engagement, tags, and mentions.
+- **Optimization and Monitoring:** Optimize MapReduce scripts, monitor HBase, set up Airflow alerts, and monitor Hadoop.
+- **Update Permissions and Documentation:** Update API tokens, document roles, permissions, and access rules.
+- **Scheduled Developments:** Regularly schedule DAGs to keep data current.
+- **GDPR Compliance:** Document personal data, comply with GDPR regulations.
 
-Ici, nous décrirons les exigences spécifiques et les objectifs du projet.
+### Environment Preparation
 
-## Configuration de l'Environnement
+#### Install Hadoop
 
-Pour commencer ce projet, nous devons configurer l'environnement. Cela implique d'installer et de configurer les outils et technologies nécessaires.
+#### HBase Installation
 
-## Guides d'Installation
+1. **Download HBase**:
 
-- ### Installation de Hadoop
-
-  Cette section fournit des instructions sur l'installation de Hadoop, un composant essentiel pour la gestion et le traitement de Big Data.
-
-- ### Installation de HBase
-
-  Ici, vous trouverez des étapes détaillées pour l'installation de HBase, une base de données NoSQL distribuée et évolutive souvent utilisée dans les projets Big Data.
-
-- ### Installation d'Airflow
-
-  Airflow est un outil essentiel pour orchestrer et planifier les flux de données. Cette partie vous guidera à travers le processus d'installation.
-
-## Collecte de Données
-
-À cette étape, nous discuterons des méthodes et des stratégies de collecte de données, une étape cruciale dans tout projet d'analyse de Big Data.
-
-## Traitement MapReduce
-
-MapReduce est un concept fondamental dans le traitement de Big Data. Ici, nous explorerons comment exploiter ce paradigme pour le traitement des données.
-
-## Stockage des Données avec HBase
-
-HBase sert de solution de stockage fiable et évolutive pour le Big Data. Apprenez comment stocker et gérer efficacement les données avec HBase.
+   ```bash
+   wget http://www.interior-dsgn.com/apache/hbase/stable/hbase-2.5.5-bin.tar.gz
