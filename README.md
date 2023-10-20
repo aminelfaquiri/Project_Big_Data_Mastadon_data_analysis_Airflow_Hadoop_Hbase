@@ -5,6 +5,7 @@
 This project is dedicated to the analysis of data from the Mastodon platform and aims to address various critical needs for the extraction, processing, and analysis of massive data. As a data developer, the mission is to establish an automated pipeline to tackle these complex challenges. This project responds to the necessity of extracting meaningful insights from raw Mastodon data, focusing on user analysis, content analysis, language analysis, media engagement, tags, mentions, and more. To achieve this, several key steps need to be followed, from raw data collection to in-depth analysis of the results. These needs define the framework of this Big Data project and will be detailed in the following sections.
 
 ## Planning
+![Online Gantt 20231020](https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/0f3d9de1-dc38-49a0-9e1d-2ed595eba474)
 
 ### Requirements Expression
 
