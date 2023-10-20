@@ -16,7 +16,123 @@
 <li class="has-line-data" data-line-start="19" data-line-end="21"><strong>GDPR Compliance:</strong> Document personal data, comply with GDPR regulations.</li>
 </ul>
 <h3 class="code-line" data-line-start=21 data-line-end=22 ><a id="Environment___21"></a>Environment  :</h3>
-<h4 class="code-line" data-line-start=23 data-line-end=24 ><a id="Hadoop_Installation__23"></a>Hadoop Installation :</h4>
+<h1 class="code-line" data-line-start=2 data-line-end=3 ><a id="Hadoop_Installation_Script_2"></a>Hadoop Installation Script</h1>
+<p class="has-line-data" data-line-start="4" data-line-end="5">This script guides you through the installation of Hadoop on Ubuntu. It covers the installation of Java, Hadoop, SSH configuration, and the necessary environment setup.</p>
+<h2 class="code-line" data-line-start=6 data-line-end=7 ><a id="Installing_Java_on_Ubuntu_6"></a>Installing Java on Ubuntu</h2>
+<pre><code class="has-line-data" data-line-start="9" data-line-end="13" class="language-bash">sudo apt install default-jre default-jdk -y
+java -version
+readlink $(<span class="hljs-built_in">which</span> javac)
+</code></pre>
+<h2 class="code-line" data-line-start=14 data-line-end=15 ><a id="Create_a_user_for_Hadoop_and_configure_SSH_14"></a>Create a user for Hadoop and configure SSH</h2>
+<pre><code class="has-line-data" data-line-start="17" data-line-end="26" class="language-bash">sudo adduser hadoop
+sudo usermod <span class="hljs-operator">-a</span>G sudo hadoop
+sudo su - hadoop
+sudo apt install openssh-server openssh-client -y
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys 
+sudo chmod <span class="hljs-number">640</span> ~/.ssh/authorized_keys
+ssh localhost
+</code></pre>
+<h2 class="code-line" data-line-start=27 data-line-end=28 ><a id="Download_and_install_Apache_Hadoop_on_Ubuntu_27"></a>Download and install Apache Hadoop on Ubuntu</h2>
+<pre><code class="has-line-data" data-line-start="30" data-line-end="36" class="language-bash">wget https://dlcdn.apache.org/hadoop/common/hadoop-<span class="hljs-number">3.3</span>.<span class="hljs-number">6</span>/hadoop-<span class="hljs-number">3.3</span>.<span class="hljs-number">6</span>.tar.gz
+tar -xvzf hadoop-<span class="hljs-number">3.3</span>.<span class="hljs-number">6</span>.tar.gz
+sudo mv hadoop-<span class="hljs-number">3.3</span>.<span class="hljs-number">6</span> /usr/<span class="hljs-built_in">local</span>/hadoop
+sudo mkdir /usr/<span class="hljs-built_in">local</span>/hadoop/logs
+sudo chown -R hadoop:hadoop /usr/<span class="hljs-built_in">local</span>/hadoop
+</code></pre>
+<h2 class="code-line" data-line-start=37 data-line-end=38 ><a id="Configure_Hadoop_on_Ubuntu_37"></a>Configure Hadoop on Ubuntu</h2>
+<pre><code class="has-line-data" data-line-start="40" data-line-end="42" class="language-bash">sudo nano ~/.bashrc
+</code></pre>
+<p class="has-line-data" data-line-start="43" data-line-end="44">Add the following lines to <code>~/.bashrc</code>:</p>
+<pre><code class="has-line-data" data-line-start="46" data-line-end="56" class="language-bash"><span class="hljs-built_in">export</span> HADOOP_HOME=/usr/<span class="hljs-built_in">local</span>/hadoop
+<span class="hljs-built_in">export</span> HADOOP_INSTALL=<span class="hljs-variable">$HADOOP_HOME</span>
+<span class="hljs-built_in">export</span> HADOOP_MAPRED_HOME=<span class="hljs-variable">$HADOOP_HOME</span>
+<span class="hljs-built_in">export</span> HADOOP_COMMON_HOME=<span class="hljs-variable">$HADOOP_HOME</span>
+<span class="hljs-built_in">export</span> HADOOP_HDFS_HOME=<span class="hljs-variable">$HADOOP_HOME</span>
+<span class="hljs-built_in">export</span> YARN_HOME=<span class="hljs-variable">$HADOOP_HOME</span>
+<span class="hljs-built_in">export</span> HADOOP_COMMON_LIB_NATIVE_DIR=<span class="hljs-variable">$HADOOP_HOME</span>/lib/native
+<span class="hljs-built_in">export</span> PATH=<span class="hljs-variable">$PATH</span>:<span class="hljs-variable">$HADOOP_HOME</span>/sbin:<span class="hljs-variable">$HADOOP_HOME</span>/bin
+<span class="hljs-built_in">export</span> HADOOP_OPTS=<span class="hljs-string">"-Djava.library.path=<span class="hljs-variable">$HADOOP_HOME</span>/lib/native"</span>
+</code></pre>
+<p class="has-line-data" data-line-start="57" data-line-end="58">Apply the changes:</p>
+<pre><code class="has-line-data" data-line-start="60" data-line-end="62" class="language-bash"><span class="hljs-built_in">source</span> ~/.bashrc
+</code></pre>
+<h2 class="code-line" data-line-start=63 data-line-end=64 ><a id="Configure_java_environment_variables_63"></a>Configure java environment variables</h2>
+<pre><code class="has-line-data" data-line-start="66" data-line-end="68" class="language-bash">sudo nano <span class="hljs-variable">$HADOOP_HOME</span>/etc/hadoop/hadoop-env.sh
+</code></pre>
+<p class="has-line-data" data-line-start="69" data-line-end="70">Add the following lines to <code>hadoop-env.sh</code>:</p>
+<pre><code class="has-line-data" data-line-start="72" data-line-end="75" class="language-bash"><span class="hljs-built_in">export</span> JAVA_HOME=/usr/lib/jvm/java-<span class="hljs-number">11</span>-openjdk-amd64
+<span class="hljs-built_in">export</span> HADOOP_CLASSPATH+=<span class="hljs-string">" <span class="hljs-variable">$HADOOP_HOME</span>/lib/*.jar"</span>
+</code></pre>
+<p class="has-line-data" data-line-start="76" data-line-end="77">Edit the <code>hadoop-env.sh</code> file:</p>
+<pre><code class="has-line-data" data-line-start="79" data-line-end="84" class="language-bash"><span class="hljs-built_in">cd</span> /usr/<span class="hljs-built_in">local</span>/hadoop/lib
+sudo wget https://jcenter.bintray.com/javax/activation/javax.activation-api/<span class="hljs-number">1.2</span>.<span class="hljs-number">0</span>/javax.activation-api-<span class="hljs-number">1.2</span>.<span class="hljs-number">0</span>.jar
+hadoop version
+<span class="hljs-built_in">cd</span> /usr/<span class="hljs-built_in">local</span>/hadoop/lib
+</code></pre>
+<h2 class="code-line" data-line-start=85 data-line-end=86 ><a id="Edit_the_coresitexml_file_85"></a>Edit the core-site.xml file</h2>
+<pre><code class="has-line-data" data-line-start="88" data-line-end="90" class="language-bash">sudo nano <span class="hljs-variable">$HADOOP_HOME</span>/etc/hadoop/core-site.xml
+</code></pre>
+<p class="has-line-data" data-line-start="91" data-line-end="92">Add the following configuration to <code>core-site.xml</code>:</p>
+<pre><code class="has-line-data" data-line-start="94" data-line-end="100" class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">property</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">name</span>&gt;</span>fs.default.name<span class="hljs-tag">&lt;/<span class="hljs-title">name</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">value</span>&gt;</span>hdfs://localhost:9000<span class="hljs-tag">&lt;/<span class="hljs-title">value</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">description</span>&gt;</span>The default file system URI<span class="hljs-tag">&lt;/<span class="hljs-title">description</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">property</span>&gt;</span>
+</code></pre>
+<p class="has-line-data" data-line-start="101" data-line-end="102">Create directories for HDFS:</p>
+<pre><code class="has-line-data" data-line-start="104" data-line-end="107" class="language-bash">sudo mkdir -p /home/hadoop/hdfs/{namenode,datanode}
+sudo chown -R hadoop:hadoop /home/hadoop/hdfs
+</code></pre>
+<h2 class="code-line" data-line-start=108 data-line-end=109 ><a id="Edit_the_hdfssitexml_configuration_file_108"></a>Edit the hdfs-site.xml configuration file</h2>
+<pre><code class="has-line-data" data-line-start="111" data-line-end="113" class="language-bash">sudo nano <span class="hljs-variable">$HADOOP_HOME</span>/etc/hadoop/hdfs-site.xml
+</code></pre>
+<p class="has-line-data" data-line-start="114" data-line-end="115">Add the following configuration to <code>hdfs-site.xml</code>:</p>
+<pre><code class="has-line-data" data-line-start="117" data-line-end="132" class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">property</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">name</span>&gt;</span>dfs.replication<span class="hljs-tag">&lt;/<span class="hljs-title">name</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">value</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">value</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">property</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">property</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">name</span>&gt;</span>dfs.name.dir<span class="hljs-tag">&lt;/<span class="hljs-title">name</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">value</span>&gt;</span>file:///home/hadoop/hdfs/namenode<span class="hljs-tag">&lt;/<span class="hljs-title">value</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">property</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">property</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">name</span>&gt;</span>dfs.data.dir<span class="hljs-tag">&lt;/<span class="hljs-title">name</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">value</span>&gt;</span>file:///home/hadoop/hdfs/datanode<span class="hljs-tag">&lt;/<span class="hljs-title">value</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">property</span>&gt;</span>
+</code></pre>
+<h2 class="code-line" data-line-start=133 data-line-end=134 ><a id="Edit_the_mapredsitexml_file_133"></a>Edit the mapred-site.xml file</h2>
+<pre><code class="has-line-data" data-line-start="136" data-line-end="138" class="language-bash">sudo nano <span class="hljs-variable">$HADOOP_HOME</span>/etc/hadoop/mapred-site.xml
+</code></pre>
+<p class="has-line-data" data-line-start="139" data-line-end="140">Add the following configuration to <code>mapred-site.xml</code>:</p>
+<pre><code class="has-line-data" data-line-start="142" data-line-end="147" class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">property</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">name</span>&gt;</span>mapreduce.framework.name<span class="hljs-tag">&lt;/<span class="hljs-title">name</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">value</span>&gt;</span>yarn<span class="hljs-tag">&lt;/<span class="hljs-title">value</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">property</span>&gt;</span>
+</code></pre>
+<h2 class="code-line" data-line-start=148 data-line-end=149 ><a id="Edit_the_yarnsitexml_file_148"></a>Edit the yarn-site.xml file</h2>
+<pre><code class="has-line-data" data-line-start="151" data-line-end="153" class="language-bash">sudo nano <span class="hljs-variable">$HADOOP_HOME</span>/etc/hadoop/yarn-site.xml
+</code></pre>
+<p class="has-line-data" data-line-start="154" data-line-end="155">Add the following configuration to <code>yarn-site.xml</code>:</p>
+<pre><code class="has-line-data" data-line-start="157" data-line-end="162" class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-title">property</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">name</span>&gt;</span>yarn.nodemanager.aux-services<span class="hljs-tag">&lt;/<span class="hljs-title">name</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">value</span>&gt;</span>mapreduce_shuffle<span class="hljs-tag">&lt;/<span class="hljs-title">value</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">property</span>&gt;</span>
+</code></pre>
+<h2 class="code-line" data-line-start=163 data-line-end=164 ><a id="Start_the_Hadoop_cluster_163"></a>Start the Hadoop cluster</h2>
+<pre><code class="has-line-data" data-line-start="166" data-line-end="171" class="language-bash">hdfs namenode -format
+start-dfs.sh
+start-yarn.sh
+jps
+</code></pre>
+<h2 class="code-line" data-line-start=172 data-line-end=173 ><a id="Access_the_Hadoop_web_interface_172"></a>Access the Hadoop web interface</h2>
+<p class="has-line-data" data-line-start="174" data-line-end="175">Open your web browser and visit:</p>
+<pre><code class="has-line-data" data-line-start="177" data-line-end="179" class="language-plaintext">http://server-IP:9870
+</code></pre>
+<p class="has-line-data" data-line-start="180" data-line-end="181">Replace <code>server-IP</code> with your server’s IP address.</p>
+
 <h4 class="code-line" data-line-start=25 data-line-end=26 ><a id="HBase_Installation_25"></a>HBase Installation</h4>
 <ol>
 <li class="has-line-data" data-line-start="27" data-line-end="33">
