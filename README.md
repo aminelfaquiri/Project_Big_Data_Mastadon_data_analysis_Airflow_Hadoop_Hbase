@@ -2,7 +2,9 @@
 <h2 class="code-line" data-line-start=2 data-line-end=3 ><a id="Introduction_2"></a>Introduction</h2>
 <p class="has-line-data" data-line-start="4" data-line-end="5">This project is dedicated to the analysis of data from the Mastodon platform and aims to address various critical needs for the extraction, processing, and analysis of massive data. As a data developer, the mission is to establish an automated pipeline to tackle these complex challenges. This project responds to the necessity of extracting meaningful insights from raw Mastodon data, focusing on user analysis, content analysis, language analysis, media engagement, tags, mentions, and more. To achieve this, several key steps need to be followed, from raw data collection to in-depth analysis of the results. These needs define the framework of this Big Data project and will be detailed in the following sections.</p>
 <h2 class="code-line" data-line-start=6 data-line-end=7 ><a id="Planning_6"></a>Planning</h2>
-<h3 class="code-line" data-line-start=8 data-line-end=9 ><a id="Requirements_Expression__8"></a>Requirements Expression :</h3>
+<img width="540" alt="Capture d'écran 2023-10-20 222858" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/f38055c4-189b-4e8a-9cb5-be758231c2f4">
+
+<h2 class="code-line" data-line-start=8 data-line-end=9 ><a id="Requirements_Expression__8"></a>Requirements Expression :</h3>
 <ul>
 <li class="has-line-data" data-line-start="10" data-line-end="11"><strong>Data Collection:</strong> Use the Mastodon API, store data in HDFS, and model the HDFS Data Lake.</li>
 <li class="has-line-data" data-line-start="11" data-line-end="12"><strong>MapReduce Processing:</strong> Mapper and reducer to transform and aggregate data.</li>
