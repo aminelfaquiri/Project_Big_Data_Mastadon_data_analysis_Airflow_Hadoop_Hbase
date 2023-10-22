@@ -137,7 +137,8 @@ jps
 <pre><code class="has-line-data" data-line-start="177" data-line-end="179" class="language-plaintext">http://server-IP:9870
 </code></pre>
 <p class="has-line-data" data-line-start="180" data-line-end="181">Replace <code>server-IP</code> with your server’s IP address.</p>
-![WhatsApp Image 2023-10-21 at 15 39 34](https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/80fde465-3a61-42b7-8374-7ebb5040345e)
+
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/80fde465-3a61-42b7-8374-7ebb5040345e">
 
 <h3 class="code-line" data-line-start=25 data-line-end=26 ><a id="HBase_Installation_25"></a>HBase Installation</h4>
 <ol>
@@ -219,7 +220,8 @@ jps
 </code></pre>
 </li>
 </ol>
-![WhatsApp Image 2023-10-22 at 00 30 59 (1)](https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/1f1f1a5a-b453-44aa-b152-945fa5fbcae0)
+
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/1f1f1a5a-b453-44aa-b152-945fa5fbcae0">
 
 <h4 class="code-line" data-line-start=117 data-line-end=118 ><a id="Airflow_Installation__117"></a>Airflow Installation :</h4>
 <h2 class="code-line" data-line-start=119 data-line-end=120 ><a id="Data_Collection_119"></a>Data Collection</h2>
