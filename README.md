@@ -235,9 +235,8 @@ To execute my code, I use the following command in the terminal:
 python3 get_data.py
 ```
 <p class="has-line-data" data-line-start="0" data-line-end="1">The data is retrieved in JSON format and follows the structure shown below:</p>
-
-<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/a1dcdeb1-7b70-4e05-9d3a-e7516cdf07d4">
 <img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/d846f50e-8a60-4bf2-88c9-6c6fe8c7b7ae">
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/a1dcdeb1-7b70-4e05-9d3a-e7516cdf07d4">
 
 <h2 class="code-line" data-line-start=121 data-line-end=122 ><a id="MapReduce_Processing_121"></a>MapReduce Processing</h2>
 <p class="has-line-data" data-line-start="0" data-line-end="1">In this step, I will create MapReduce jobs to process my data and extract key-value pairs for subsequent analysis. Each analysis task has its own set of mapper and reducer scripts.</p>
@@ -246,7 +245,8 @@ python3 get_data.py
 <li class="has-line-data" data-line-start="4" data-line-end="10"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="6" data-line-end="9" class="language-python">user_mapper.py
 user_reducer.py
 </code></pre>
-<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/77b8fb6f-b3e8-4013-8cf2-911d2a6b52eb">
+
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/02f3a52b-afcd-4279-b81a-16824c001d26">
 
 </li>
 </ul>
@@ -255,6 +255,8 @@ user_reducer.py
 <li class="has-line-data" data-line-start="12" data-line-end="18"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="14" data-line-end="17" class="language-python">user_engagement_mapper.py
 user_engagement_reducer.py
 </code></pre>
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/2569a313-6291-4700-895a-5491cb3161fb">
+
 </li>
 </ul>
 <h3 class="code-line" data-line-start=18 data-line-end=19 ><a id="User_Growth_18"></a>User Growth</h3>
@@ -262,6 +264,8 @@ user_engagement_reducer.py
 <li class="has-line-data" data-line-start="20" data-line-end="26"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="22" data-line-end="25" class="language-python">user_create_date_mapper.py
 user_create_date_reducer.py
 </code></pre>
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/23f8ae1d-cb25-4d6b-a127-c51ae8c79c61">
+
 </li>
 </ul>
 <h3 class="code-line" data-line-start=26 data-line-end=27 ><a id="External_Websites_26"></a>External Websites</h3>
@@ -269,6 +273,8 @@ user_create_date_reducer.py
 <li class="has-line-data" data-line-start="28" data-line-end="34"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="30" data-line-end="33" class="language-python">external_sites_mapper.py
 external_sites_reducer.py
 </code></pre>
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/8073e5d6-27ce-4275-99a8-c12dcf6b076a">
+  
 </li>
 </ul>
 <h3 class="code-line" data-line-start=34 data-line-end=35 ><a id="Post_Languages_34"></a>Post Languages</h3>
@@ -276,6 +282,8 @@ external_sites_reducer.py
 <li class="has-line-data" data-line-start="36" data-line-end="42"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="38" data-line-end="41" class="language-python">analyse_langue_mapper.py
 analyse_langue_reducer.py
 </code></pre>
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/2a5990c5-692b-4073-b79d-9f201c19689b">
+
 </li>
 </ul>
 <h3 class="code-line" data-line-start=42 data-line-end=43 ><a id="Multimedia_Attachments_42"></a>Multimedia Attachments</h3>
@@ -283,6 +291,7 @@ analyse_langue_reducer.py
 <li class="has-line-data" data-line-start="44" data-line-end="50"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="46" data-line-end="49" class="language-python">attachments_mapper.py
 attachments_reducer.py
 </code></pre>
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/deb19e65-d649-40da-91ef-9daad50df57f">
 </li>
 </ul>
 <h3 class="code-line" data-line-start=50 data-line-end=51 ><a id="Tags_and_Mentions_50"></a>Tags and Mentions</h3>
@@ -290,6 +299,8 @@ attachments_reducer.py
 <li class="has-line-data" data-line-start="52" data-line-end="57"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="54" data-line-end="57" class="language-python">tag_user_mapper.py
 tag_user_reducer.py
 </code></pre>
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/695a611e-8a0a-4872-bc28-2b63ade93c7d">
+
 </li>
 </ul>
 <p class="has-line-data" data-line-start="57" data-line-end="58">All these MapReduce scripts are located in the MapReduce folder.</p>
