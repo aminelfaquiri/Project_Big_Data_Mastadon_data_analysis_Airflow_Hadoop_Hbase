@@ -129,7 +129,8 @@ start-dfs.sh
 start-yarn.sh
 jps
 </code></pre>
-![jps](https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/68c88037-1c12-4e73-a7d8-43b7cbd95160)
+
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/68c88037-1c12-4e73-a7d8-43b7cbd95160">
 
 <h4 class="code-line" data-line-start=172 data-line-end=173 ><a id="Access_the_Hadoop_web_interface_172"></a>Access the Hadoop web interface</h4>
 <p class="has-line-data" data-line-start="174" data-line-end="175">Open your web browser and visit:</p>
