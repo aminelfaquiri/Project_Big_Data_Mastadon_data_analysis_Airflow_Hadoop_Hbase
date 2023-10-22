@@ -224,6 +224,7 @@ jps
 <img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/1f1f1a5a-b453-44aa-b152-945fa5fbcae0">
 
 <h3 class="code-line" data-line-start=117 data-line-end=118 ><a id="Airflow_Installation__117"></a>Airflow Installation :</h3>
+<a href="https://medium.com/international-school-of-ai-data-science/setting-up-apache-airflow-in-ubuntu-324cfcee1427">Apache airflow installation guide</a>
 <h2 class="code-line" data-line-start=119 data-line-end=120 ><a id="Data_Collection_119"></a>Data Collection</h2>
 <h2 class="code-line" data-line-start=121 data-line-end=122 ><a id="MapReduce_Processing_121"></a>MapReduce Processing</h2>
 <h2 class="code-line" data-line-start=123 data-line-end=124 ><a id="Data_Storage_with_HBa_123"></a>Data Storage with HBas</h2>
