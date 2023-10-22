@@ -237,6 +237,7 @@ python3 get_data.py
 <p class="has-line-data" data-line-start="0" data-line-end="1">The data is retrieved in JSON format and follows the structure shown below:</p>
 
 <img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/a1dcdeb1-7b70-4e05-9d3a-e7516cdf07d4">
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/d846f50e-8a60-4bf2-88c9-6c6fe8c7b7ae">
 
 <h2 class="code-line" data-line-start=121 data-line-end=122 ><a id="MapReduce_Processing_121"></a>MapReduce Processing</h2>
 <p class="has-line-data" data-line-start="0" data-line-end="1">In this step, I will create MapReduce jobs to process my data and extract key-value pairs for subsequent analysis. Each analysis task has its own set of mapper and reducer scripts.</p>
@@ -245,6 +246,8 @@ python3 get_data.py
 <li class="has-line-data" data-line-start="4" data-line-end="10"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="6" data-line-end="9" class="language-python">user_mapper.py
 user_reducer.py
 </code></pre>
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/77b8fb6f-b3e8-4013-8cf2-911d2a6b52eb">
+
 </li>
 </ul>
 <h3 class="code-line" data-line-start=10 data-line-end=11 ><a id="User_Engagement_Rate_10"></a>User Engagement Rate</h3>
