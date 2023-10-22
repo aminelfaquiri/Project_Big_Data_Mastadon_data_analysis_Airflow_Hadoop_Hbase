@@ -234,7 +234,9 @@ To execute my code, I use the following command in the terminal:
 ```bash
 python3 get_data.py
 ```
-<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/93f0518b-2cfb-4259-8799-d65b3441fed1">
+<p class="has-line-data" data-line-start="0" data-line-end="1">The data is retrieved in JSON format and follows the structure shown below:</p>
+
+<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/a1dcdeb1-7b70-4e05-9d3a-e7516cdf07d4">
 
 <h2 class="code-line" data-line-start=121 data-line-end=122 ><a id="MapReduce_Processing_121"></a>MapReduce Processing</h2>
 <h2 class="code-line" data-line-start=123 data-line-end=124 ><a id="Data_Storage_with_HBa_123"></a>Data Storage with HBas</h2>
