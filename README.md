@@ -227,19 +227,13 @@ jps
 <a href="https://medium.com/international-school-of-ai-data-science/setting-up-apache-airflow-in-ubuntu-324cfcee1427">Apache airflow installation guide</a>
 <h2 class="code-line" data-line-start=119 data-line-end=120 ><a id="Data_Collection_119"></a>Data Collection</h2>
 
-# Mastodon Platform Data Retrieval
+To obtain data from the Mastodon platform, I employ a Python script that interacts with the platform's API. The data is retrieved in JSON format, with each object presented on a separate line, a format optimized for preprocessing prior to MapReduce processing.
 
-## Introduction
-
-This project focuses on the extraction of data from the Mastodon platform using a Python script. The data is retrieved from the platform's API in JSON format, with each object stored on a separate line. This specific format facilitates data preprocessing, making it suitable for MapReduce processing.
-
-## Getting Started
-
-To run the Python script and retrieve Mastodon platform data, execute the following command in your terminal:
+To execute my code, I use the following command in the terminal:
 
 ```bash
 python3 get_data.py
-
+```
 <img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/93f0518b-2cfb-4259-8799-d65b3441fed1">
 
 <h2 class="code-line" data-line-start=121 data-line-end=122 ><a id="MapReduce_Processing_121"></a>MapReduce Processing</h2>
