@@ -227,7 +227,7 @@ jps
 <a href="https://medium.com/international-school-of-ai-data-science/setting-up-apache-airflow-in-ubuntu-324cfcee1427">Apache airflow installation guide</a>
 <h2 class="code-line" data-line-start=119 data-line-end=120 ><a id="Data_Collection_119"></a>Data Collection</h2>
 
-To obtain data from the Mastodon platform, I employ a Python script that interacts with the platform's API. The data is retrieved in JSON format, with each object presented on a separate line, a format optimized for preprocessing prior to MapReduce processing.
+To collect data from the Mastodon platform, I utilize a Python script that communicates with the platform's API. The data is fetched in JSON format, with each object structured on a single line. This format is ideal for preprocessing before undergoing MapReduce processing, and the JSON data is stored in HDFS.
 
 To execute my code, I use the following command in the terminal:
 
