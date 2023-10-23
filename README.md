@@ -239,7 +239,7 @@ python3 get_data.py
 <img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/a1dcdeb1-7b70-4e05-9d3a-e7516cdf07d4">
 
 <h2 class="code-line" data-line-start=121 data-line-end=122 ><a id="MapReduce_Processing_121"></a>MapReduce Processing</h2>
-<p class="has-line-data" data-line-start="0" data-line-end="1">In this step, I will create MapReduce jobs to process my data and extract key-value pairs for subsequent analysis. Each analysis task has its own set of mapper and reducer scripts.</p>
+<p class="has-line-data" data-line-start="0" data-line-end="1">In this step, I will create MapReduce jobs to process my data, extracting key-value pairs for subsequent analysis, and storing the results in HBase tables. Each MapReduce job is responsible for processing and transforming the data, generating key-value pairs, and then saving the processed data into HBase tables. Each specific analysis task is associated with its own set of mapper and reducer scripts</p>
 <h3 class="code-line" data-line-start=2 data-line-end=3 ><a id="Number_of_Subscribers_2"></a>user followors,Engagement Rate,User Growth</h3>
 <ul>
 <li class="has-line-data" data-line-start="4" data-line-end="10"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="6" data-line-end="9" class="language-python">utilisateure_mapper.py
