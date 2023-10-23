@@ -274,7 +274,6 @@ attachments_reducer.py
 <li class="has-line-data" data-line-start="52" data-line-end="57"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="54" data-line-end="57" class="language-python">tag_user_mapper.py
 tag_user_reducer.py
 </code></pre>
-<img width="540" alt="Capture d'écran 2023-10-20 222858" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/f38055c4-189b-4e8a-9cb5-be758231c2f4">
 
 </li>
 </ul>
@@ -317,7 +316,8 @@ tag_user_reducer.py
 <pre><code>hadoop jar Documents/hadoop-streaming-2.7.3.jar -input /Mostodon/Raw/mastodon_data_2023-10-21.json -output /Mostodon/user -mapper /home/hadoop/MP/utilisateure_mapper.py -reducer /home/hadoop/MP/utilisateure_reducer.py</code></pre>
 
 <b>resulte :</b>
-<img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
+
+<img width="687" alt="user table" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/bee7eba8-ee03-4af0-83b9-6053c276b1d2">
 
 <h4>Content language Table:</h4>
 
@@ -325,7 +325,9 @@ tag_user_reducer.py
 </pre>
 
 <b>resulte :</b>
-<img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
+
+<img width="620" alt="language" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/248b4a39-3dc1-41f5-af27-bdfe258b6c46">
+
 
 <h4>externale links Table:</h4>
 
@@ -333,22 +335,31 @@ tag_user_reducer.py
 </pre>
 
 <b>resulte :</b>
-<img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
+
+<img width="619" alt="websites" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/c6bd1c5d-9489-4d41-b790-0ae499c6e344">
+
 
 <h4>post attachement Table:</h4>
 
 <pre><code>hadoop jar Documents/hadoop-streaming-2.7.3.jar -input /Mostodon/Raw/mastodon_data_2023-10-21.json -output /Mostodon/media_attachements -mapper /home/hadoop/MP/attachments_mapper.py -reducer /home/hadoop/MP/attachments_reducer.py</code></pre>
 
 <b>resulte :</b>
-<img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
+
+<img width="616" alt="post attachment" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/70879acb-84af-4499-8f8b-adef2ea7dbe6">
 
 
 <h4>Tags Mention Table:</h4>
 <pre>
 <code>hadoop jar Documents/hadoop-streaming-2.7.3.jar -input /Mostodon/Raw/mastodon_data_2023-10-21.json -output /Mostodon/tags_mention_user -mapper /home/hadoop/MP/tag_user_mapper.py -reducer /home/hadoop/MP/tag_user_reducer.py</code>
 </pre>
+
 <b>resulte :</b>
-<img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
+
+<img width="578" alt="tags" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/e980b725-1197-4b8d-a128-aa82490d4a3c">
+
+<img width="559" alt="mentions" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/05ebe667-0c14-4869-8b58-fadc4f630fb9">
+
+<h4>My HDFS :</h4>
 
 <h2 class="code-line" data-line-start=123 data-line-end=124 ><a id="Data_Storage_with_HBa_123"></a>Airflow</h2>
 
