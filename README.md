@@ -285,7 +285,9 @@ tag_user_reducer.py
 
 <p>In this phase, I'll design and create all the necessary HBase tables and populate them with data using MapReduce processes. To create the HBase tables, I'll use a Python script called <code>Tablecreator.py</code>.</p>
 <h5>use hbase shell to show my table :</h5>
+
 <code>hbase shell</code>
+
 <img width="540" alt="Capture d'écran 2023-10-20 222858" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/dd933f51-c724-4dbb-921a-61af3bb784da">
 
 <h3>Step 2: Insert Data into hbase Table From MapReduicer</h3>
