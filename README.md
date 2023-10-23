@@ -274,10 +274,17 @@ attachments_reducer.py
 <li class="has-line-data" data-line-start="52" data-line-end="57"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="54" data-line-end="57" class="language-python">tag_user_mapper.py
 tag_user_reducer.py
 </code></pre>
+<img width="540" alt="Capture d'écran 2023-10-20 222858" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/f38055c4-189b-4e8a-9cb5-be758231c2f4">
 
 </li>
 </ul>
 <p class="has-line-data" data-line-start="57" data-line-end="58">All these MapReduce scripts are located in the MapReduce folder.</p>
 <h2 class="code-line" data-line-start=123 data-line-end=124 ><a id="Data_Storage_with_HBa_123"></a>Data Storage with HBase</h2>
+### Step 1: HBase Table Design and Data Loading
+
+In this phase, I'll design and create all the necessary HBase tables and populate them with data using MapReduce processes. To create the HBase tables, I'll use a Python script called `createTable.py`.
+<img width="540" alt="Capture d'écran 2023-10-20 222858" src="https://picsum.photos/seed/picsum/200/300">
+
+
 <h2 class="code-line" data-line-start=123 data-line-end=124 ><a id="Data_Storage_with_HBa_123"></a>Airflow</h2>
 
