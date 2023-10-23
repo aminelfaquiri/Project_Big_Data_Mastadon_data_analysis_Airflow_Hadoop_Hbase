@@ -361,9 +361,11 @@ tag_user_reducer.py
 
 <h4>My HDFS files:</h4>
 
+<img width="559" alt="mentions" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/b4ddbb1a-6df4-4908-af6e-8f4b3cdd1bf3">
+
 <img width="559" alt="mentions" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/5519862c-fd76-4d9a-b490-46f8d91eed02">
 
-<img width="559" alt="mentions" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/b4ddbb1a-6df4-4908-af6e-8f4b3cdd1bf3">
+
 
 
 <h2 class="code-line" data-line-start=123 data-line-end=124 ><a id="Data_Storage_with_HBa_123"></a>Airflow</h2>
