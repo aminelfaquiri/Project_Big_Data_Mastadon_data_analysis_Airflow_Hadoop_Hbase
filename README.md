@@ -240,31 +240,13 @@ python3 get_data.py
 
 <h2 class="code-line" data-line-start=121 data-line-end=122 ><a id="MapReduce_Processing_121"></a>MapReduce Processing</h2>
 <p class="has-line-data" data-line-start="0" data-line-end="1">In this step, I will create MapReduce jobs to process my data and extract key-value pairs for subsequent analysis. Each analysis task has its own set of mapper and reducer scripts.</p>
-<h3 class="code-line" data-line-start=2 data-line-end=3 ><a id="Number_of_Subscribers_2"></a>Number of Subscribers</h3>
+<h3 class="code-line" data-line-start=2 data-line-end=3 ><a id="Number_of_Subscribers_2"></a>user followors,Engagement Rate,User Growth</h3>
 <ul>
-<li class="has-line-data" data-line-start="4" data-line-end="10"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="6" data-line-end="9" class="language-python">user_mapper.py
-user_reducer.py
+<li class="has-line-data" data-line-start="4" data-line-end="10"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="6" data-line-end="9" class="language-python">utilisateure_mapper.py
+utilisateure_reducer.py
 </code></pre>
 
 <img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/02f3a52b-afcd-4279-b81a-16824c001d26">
-
-</li>
-</ul>
-<h3 class="code-line" data-line-start=10 data-line-end=11 ><a id="User_Engagement_Rate_10"></a>User Engagement Rate</h3>
-<ul>
-<li class="has-line-data" data-line-start="12" data-line-end="18"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="14" data-line-end="17" class="language-python">user_engagement_mapper.py
-user_engagement_reducer.py
-</code></pre>
-<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/2569a313-6291-4700-895a-5491cb3161fb">
-
-</li>
-</ul>
-<h3 class="code-line" data-line-start=18 data-line-end=19 ><a id="User_Growth_18"></a>User Growth</h3>
-<ul>
-<li class="has-line-data" data-line-start="20" data-line-end="26"><strong>MapperReducer:</strong><pre><code class="has-line-data" data-line-start="22" data-line-end="25" class="language-python">user_create_date_mapper.py
-user_create_date_reducer.py
-</code></pre>
-<img width="540" alt="jps" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/23f8ae1d-cb25-4d6b-a127-c51ae8c79c61">
 
 </li>
 </ul>
