@@ -284,7 +284,7 @@ tag_user_reducer.py
 <h3>Step 1: HBase Table Design and Data Loading</h3>
 
 <p>In this phase, I'll design and create all the necessary HBase tables and populate them with data using MapReduce processes. To create the HBase tables, I'll use a Python script called <code>Tablecreator.py</code>.</p>
-<h5>use hbase shell to show my table :</h5>
+<b>use hbase shell to show my table :</b>
 
 <code>hbase shell</code>
 
