@@ -1,6 +1,32 @@
 #!/usr/bin/env python3
 
 import sys
+import happybase
+
+# Connect to HBase :
+connection = happybase.Connection()
+table = connection.table('tags')
+table1 = connection.table('mentions')
+
+
+def put_in_hbase_tag(tag,count) :
+        table.put(
+            tag.encode('utf-8'),
+            {
+                b'top_tags:tag_count': str(count).encode('utf-8'),
+
+            }
+        )
+    
+def put_in_hbase_mention(mention,count) :
+        table1.put(
+            mention.encode('utf-8'),
+            {
+                b'top_mentions:mention_count': str(count).encode('utf-8'),
+
+            }
+        )
+
 
 # Initialize variables to keep track of tag and mention counts
 tag_counts = {}
@@ -31,8 +57,10 @@ for line in sys.stdin:
 print("Most frequently used tags:")
 for tag, count in sorted(tag_counts.items(), key=lambda x: x[1], reverse=True):
     print(f"tags\t{tag}\t{count}")
+    put_in_hbase_tag(tag,count)
 
 # Print the most frequently mentioned users :
 print("\nMost frequently mentioned users:")
 for mention, count in sorted(mention_counts.items(), key=lambda x: x[1], reverse=True):
     print(f"mention\t{mention}\t{count}")
+    put_in_hbase_mention(mention,count)

@@ -10,11 +10,13 @@ for line in sys.stdin:
             for tag in data["tags"]:
                 # Emit tag as the key and "1" as the value
                 print(f"#{tag}\t1")
+                
 
         if "mentions" in data:
             if len(data["mentions"]) > 0 :
                 for mention in data["mentions"]:
                     # Emit mentioned user as the key and "1" as the value
                     print(f"{mention}\t1")
+
     except:
         continue
