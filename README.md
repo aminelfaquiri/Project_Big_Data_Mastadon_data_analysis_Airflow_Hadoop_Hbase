@@ -17,6 +17,11 @@
 <li class="has-line-data" data-line-start="18" data-line-end="19"><strong>Scheduled Developments:</strong> Regularly schedule DAGs to keep data current.</li>
 <li class="has-line-data" data-line-start="19" data-line-end="21"><strong>GDPR Compliance:</strong> Document personal data, comply with GDPR regulations.</li>
 </ul>
+<h2 class="code-line" data-line-start=8 data-line-end=9 ><a id="Requirements_Expression__8"></a>RGBD :</h3>
+<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
 <h2 class="code-line" data-line-start=21 data-line-end=22 ><a id="Environment___21"></a>Environment  :</h2>
 <h3 class="code-line" data-line-start=2 data-line-end=3 ><a id="Hadoop_Installation_Script_2"></a>Hadoop Installation Script</h3>
 <p class="has-line-data" data-line-start="4" data-line-end="5">This script guides you through the installation of Hadoop on Ubuntu. It covers the installation of Java, Hadoop, SSH configuration, and the necessary environment setup.</p>
