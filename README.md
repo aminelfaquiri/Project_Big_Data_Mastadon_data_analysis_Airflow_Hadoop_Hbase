@@ -288,10 +288,29 @@ tag_user_reducer.py
 
 <code>hbase shell</code>
 
-<img width="540" alt="Capture d'écran 2023-10-20 222858" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/dd933f51-c724-4dbb-921a-61af3bb784da">
+<img width="540" alt="Capture d'écran 2023-10-20 222858" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/8b998c13-3df9-4b4a-94d8-e8f28c05870e">
+<h3>The HBase Tables schema :</h3>
+
+<h4>user :</h4>
+<img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
+
+<h4>Content language Table:</h4>
+<img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
+
+<h4>externale links Table:</h4>
+<img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
+
+<h4>post attachement Table:</h4>
+<img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
+
+<h4>Tags Table:</h4>
+<img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
+
+<h4>Mention Table:</h4>
+<img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
 
 <h3>Step 2: Insert Data into hbase Table From MapReduicer</h3>
-
+<p>In this step, I'll execute my MapReduce jobs using Hadoop Streaming to store processed data in the HBase table</p>
 
 <h2 class="code-line" data-line-start=123 data-line-end=124 ><a id="Data_Storage_with_HBa_123"></a>Airflow</h2>
 
