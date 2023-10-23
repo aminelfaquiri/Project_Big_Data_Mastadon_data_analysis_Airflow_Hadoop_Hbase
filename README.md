@@ -314,37 +314,39 @@ tag_user_reducer.py
 
 <h4>user :</h4>
 
-<code>hadoop jar Documents/hadoop-streaming-2.7.3.jar -input /Mostodon/Raw/mastodon_data_2023-10-21.json -output /Mostodon/user -mapper /home/hadoop/MP/utilisateure_mapper.py -reducer /home/hadoop/MP/utilisateure_reducer.py</code>
+<pre><code>hadoop jar Documents/hadoop-streaming-2.7.3.jar -input /Mostodon/Raw/mastodon_data_2023-10-21.json -output /Mostodon/user -mapper /home/hadoop/MP/utilisateure_mapper.py -reducer /home/hadoop/MP/utilisateure_reducer.py</code></pre>
 
 <b>resulte :</b>
 <img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
 
 <h4>Content language Table:</h4>
 
-<code>hadoop jar Documents/hadoop-streaming-2.7.3.jar -input /Mostodon/Raw/mastodon_data_2023-10-21.json -output /Mostodon/language_counter -mapper /home/hadoop/MP/analyse_langue_mapper.py -reducer /home/hadoop/MP/analyse_langue_reducer.py</code>
+<pre><code>hadoop jar Documents/hadoop-streaming-2.7.3.jar -input /Mostodon/Raw/mastodon_data_2023-10-21.json -output /Mostodon/language_counter -mapper /home/hadoop/MP/analyse_langue_mapper.py -reducer /home/hadoop/MP/analyse_langue_reducer.py</code>
+</pre>
 
 <b>resulte :</b>
 <img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
 
 <h4>externale links Table:</h4>
 
-<code>hadoop jar Documents/hadoop-streaming-2.7.3.jar -input /Mostodon/Raw/mastodon_data_2023-10-21.json -output /Mostodon/exiternal_sites -mapper /home/hadoop/MP/external_sites_mapper.py -reducer /home/hadoop/MP/external_sites_reducer.py</code>
+<pre><code>hadoop jar Documents/hadoop-streaming-2.7.3.jar -input /Mostodon/Raw/mastodon_data_2023-10-21.json -output /Mostodon/exiternal_sites -mapper /home/hadoop/MP/external_sites_mapper.py -reducer /home/hadoop/MP/external_sites_reducer.py</code>
+</pre>
 
 <b>resulte :</b>
 <img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
 
 <h4>post attachement Table:</h4>
 
-<code>hadoop jar Documents/hadoop-streaming-2.7.3.jar -input /Mostodon/Raw/mastodon_data_2023-10-21.json -output /Mostodon/media_attachements -mapper /home/hadoop/MP/attachments_mapper.py -reducer /home/hadoop/MP/attachments_reducer.py</code>
+<pre><code>hadoop jar Documents/hadoop-streaming-2.7.3.jar -input /Mostodon/Raw/mastodon_data_2023-10-21.json -output /Mostodon/media_attachements -mapper /home/hadoop/MP/attachments_mapper.py -reducer /home/hadoop/MP/attachments_reducer.py</code></pre>
 
 <b>resulte :</b>
 <img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
 
 
 <h4>Tags Mention Table:</h4>
-
+<pre>
 <code>hadoop jar Documents/hadoop-streaming-2.7.3.jar -input /Mostodon/Raw/mastodon_data_2023-10-21.json -output /Mostodon/tags_mention_user -mapper /home/hadoop/MP/tag_user_mapper.py -reducer /home/hadoop/MP/tag_user_reducer.py</code>
-
+</pre>
 <b>resulte :</b>
 <img width="540" alt="Capture d'écran 2023-10-20 222858" src="">
 
