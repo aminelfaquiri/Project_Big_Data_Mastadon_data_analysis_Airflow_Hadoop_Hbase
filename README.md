@@ -400,5 +400,22 @@ In this step, I will analyze my HBase data from my tables
 
 
 <h2 class="code-line" data-line-start=123 data-line-end=124 ><a id="Data_Storage_with_HBa_123"></a>Airflow</h2>
-in this step I will use Airflow to make batch proccesing for my 
-
+<h3 class="code-line" data-line-start=0 data-line-end=1 ><a id="Workflow_Overview_0"></a>Workflow Overview</h3>
+<p class="has-line-data" data-line-start="1" data-line-end="2">The data processing workflow consists of the following key steps:</p>
+<ol>
+<li class="has-line-data" data-line-start="3" data-line-end="5">
+<p class="has-line-data" data-line-start="3" data-line-end="4"><strong>Data Extraction from Mastodon</strong>: In this initial step, Python scripts are used to extract data from Mastodon social media.</p>
+</li>
+<li class="has-line-data" data-line-start="5" data-line-end="7">
+<p class="has-line-data" data-line-start="5" data-line-end="6"><strong>HBase Table Creation</strong>: After data extraction, a new HBase table is created to store the data.</p>
+</li>
+<li class="has-line-data" data-line-start="7" data-line-end="9">
+<p class="has-line-data" data-line-start="7" data-line-end="8"><strong>Data Transformation</strong>: The extracted data is transformed to fit the HBase schema and format.</p>
+</li>
+<li class="has-line-data" data-line-start="9" data-line-end="11">
+<p class="has-line-data" data-line-start="9" data-line-end="10"><strong>MapReduce Job for Data Insertion</strong>: A MapReduce job is used to efficiently insert data into the HBase table.</p>
+</li>
+<li class="has-line-data" data-line-start="11" data-line-end="12">
+<p class="has-line-data" data-line-start="11" data-line-end="12"><strong>Data Analysis</strong>: Following data insertion, Python scripts are employed to analyze the data.</p>
+</li>
+</ol>
