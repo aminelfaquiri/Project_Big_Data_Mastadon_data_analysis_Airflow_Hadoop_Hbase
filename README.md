@@ -62,10 +62,6 @@ Ensuring compliance with the General Data Protection Regulation (GDPR) is paramo
 
     A well-defined protocol is established to promptly respond to any data breaches in accordance with GDPR requirements. Data subjects and supervisory authorities are notified as required.
 
-### Conclusion
-
-By implementing these measures, the Mastodon data pipeline underscores its dedication to respecting GDPR regulations, safeguarding personal data, and preserving the privacy rights of individuals in relation to the collected data. This commitment ensures that our data processing activities remain compliant with the GDPR, instilling trust and confidence among all stakeholders.
-
 <h2 class="code-line" data-line-start=21 data-line-end=22 ><a id="Environment___21"></a>Environment  :</h2>
 <h3 class="code-line" data-line-start=2 data-line-end=3 ><a id="Hadoop_Installation_Script_2"></a>Hadoop Installation Script</h3>
 <p class="has-line-data" data-line-start="4" data-line-end="5">This script guides you through the installation of Hadoop on Ubuntu. It covers the installation of Java, Hadoop, SSH configuration, and the necessary environment setup.</p>
