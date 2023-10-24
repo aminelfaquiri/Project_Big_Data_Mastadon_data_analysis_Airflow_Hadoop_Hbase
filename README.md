@@ -230,6 +230,9 @@ jps
 
 <h3 class="code-line" data-line-start=117 data-line-end=118 ><a id="Airflow_Installation__117"></a>Airflow Installation :</h3>
 <a href="https://medium.com/international-school-of-ai-data-science/setting-up-apache-airflow-in-ubuntu-324cfcee1427">Apache airflow installation guide</a>
+<img width="680" alt="airflow" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/52e57633-02bc-41d9-9e9f-7b9e1cfaa437">
+
+
 <h2 class="code-line" data-line-start=119 data-line-end=120 ><a id="Data_Collection_119"></a>Data Collection</h2>
 
 To collect data from the Mastodon platform, I utilize a Python script that communicates with the platform's API. The data is fetched in JSON format, with each object structured on a single line. This format is ideal for preprocessing before undergoing MapReduce processing, and the JSON data is stored in HDFS.
@@ -370,8 +373,32 @@ tag_user_reducer.py
 
 <img width="559" alt="mentions" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/5519862c-fd76-4d9a-b490-46f8d91eed02">
 
+<h2 class="code-line" data-line-start=123 data-line-end=124 ><a id="Data_Storage_with_HBa_123"></a>Mastodon Data analyse :</h2>
+In this step, I will analyze my HBase data from my tables 
+<h4>User analyse :</h4>
+<h5>Top User Has Followers :</h5>
+<img width="305" alt="analyse followers" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/c91a2e55-6475-4aef-a154-29518f712bfd">
 
+<h5>Analyze user engagement rate:</h5>
+<img width="305" alt="analyse followers" src="">
+
+<h5>Analyze user growth:</h5>
+<img width="305" alt="analyse followers" src="">
+
+<h4>Content analysis:</h4>
+<h5>Analyze external websites:</h5>
+<img width="305" alt="analyse followers" src="">
+
+<h5>Language Analysis:</h5>
+<img width="305" alt="analyse followers" src="">
+
+<h5>Media Engagement Analysis:</h5>
+<img width="305" alt="analyse followers" src="">
+
+<h5>Analysis of tags and mentions:</h5>
+<img width="305" alt="analyse followers" src="">
 
 
 <h2 class="code-line" data-line-start=123 data-line-end=124 ><a id="Data_Storage_with_HBa_123"></a>Airflow</h2>
+in this step I will use Airflow to make batch proccesing for my 
 
