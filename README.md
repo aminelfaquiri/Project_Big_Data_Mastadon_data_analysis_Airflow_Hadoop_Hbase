@@ -15,16 +15,16 @@
 <li class="has-line-data" data-line-start="16" data-line-end="17"><strong>Optimization and Monitoring:</strong> Optimize MapReduce scripts, monitor HBase, set up Airflow alerts, and monitor Hadoop.</li>
 <li class="has-line-data" data-line-start="17" data-line-end="18"><strong>Update Permissions and Documentation:</strong> Update API tokens, document roles, permissions, and access rules.</li>
 <li class="has-line-data" data-line-start="18" data-line-end="19"><strong>Scheduled Developments:</strong> Regularly schedule DAGs to keep data current.</li>
-<li class="has-line-data" data-line-start="19" data-line-end="21"><strong>GDPR Compliance:</strong> Document personal data, comply with GDPR regulations.</li>
+<li class="has-line-data" data-line-start="19" data-line-end="21"><strong>RGBD Compliance:</strong> Document personal data, comply with GDPR regulations.</li>
 </ul>
 <h2 class="code-line" data-line-start=8 data-line-end=9 ><a id="Requirements_Expression__8"></a>RGBD :</h3>
-Ensuring compliance with the General Data Protection Regulation (GDPR) is paramount when handling personal data within the Mastodon data pipeline. This document outlines the key steps taken to adhere to GDPR regulations, demonstrating our commitment to safeguarding personal data and upholding the privacy rights of individuals.
+Ensuring compliance with the General Data Protection Regulation (RGBD) is paramount when handling personal data within the Mastodon data pipeline. This document outlines the key steps taken to adhere to RGBD regulations, demonstrating our commitment to safeguarding personal data and upholding the privacy rights of individuals.
 
-### Key Steps for GDPR Compliance
+### Key Steps for RGBD Compliance
 
 1. **Data Anonymization:**
 
-   Personal information plays a critical role in GDPR compliance. To meet GDPR requirements, any personal data that is irrelevant to the analysis is either deleted or hashed before processing. This procedure ensures that sensitive personal information remains protected throughout the data pipeline.
+   Personal information plays a critical role in RGBD compliance. To meet GDPR requirements, any personal data that is irrelevant to the analysis is either deleted or hashed before processing. This procedure ensures that sensitive personal information remains protected throughout the data pipeline.
 
 2. **Data Minimization:**
 
@@ -44,7 +44,7 @@ Ensuring compliance with the General Data Protection Regulation (GDPR) is paramo
 
 6. **Consent Management:**
 
-   Where applicable, data processing activities are conducted only after obtaining explicit consent from data subjects, as required by GDPR. Consent records are diligently maintained and managed.
+   Where applicable, data processing activities are conducted only after obtaining explicit consent from data subjects, as required by RGBD. Consent records are diligently maintained and managed.
 
 7. **Data Subject Rights:**
 
@@ -331,6 +331,9 @@ tag_user_reducer.py
 <h3>Step 1: HBase Table Design and Data Loading</h3>
 
 <p>In this phase, I'll design and create all the necessary HBase tables and populate them with data using MapReduce processes. To create the HBase tables, I'll use a Python script called <code>Tablecreator.py</code>.</p>
+
+<img width="684" alt="all table" src="https://github.com/aminelfaquiri/Project_Big_Data_Mastadon_data_analysis_Airflow_Hadoop_Hbase/assets/81482544/297b6758-1e8c-447d-a0b3-90d4f6c4782d">
+
 <b>use hbase shell to show my table :</b>
 
 <code>hbase shell</code>
